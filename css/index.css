@@ -87,6 +87,10 @@
   padding-left: 27px;
 }
 
+.appeals {
+  position: relative;
+}
+
 .appeals__heading {
   font-size: 28px;
   color: #e7e7e7;
@@ -141,7 +145,7 @@
 
 .text {
   font-family: "Open Sans Reg", Georgia, sans-serif;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 .text--white {
@@ -248,7 +252,7 @@
     margin-left: auto;
     margin-right: auto;
     top: 98px;
-    max-width: calc(320px - 18px);
+    max-width: calc(100% - 10px);
     z-index: 2;
   }
   .biorobot__img--footballer {
@@ -293,5 +297,61 @@
   .negro-appeals-list__heading {
     margin-bottom: 30px;
   }
+
+  .appeals__img {
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .appeals__heading {
+    margin-bottom: 24px;
+  }
+
+  .appeals {
+    padding-bottom: 80px;
+  }
+
+  .appeals:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 294px;
+    left: 20px;
+    font-size: 14px;
+    font-family: "Open Sans Bold", Georgia, sans-serif;
+    color: #ffffff;
+    padding: 20px 27px 30px;
+    background-color: #5e42b0;
+  }
+
+  .appeals:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 334px;
+    left: 47px;
+    height: 0;
+    width: 16px;
+    border-top: 4px solid #8f7bc8;
+  }
+
+  .be-active:before {
+    content: '01';
+  }
+
+  .find-contact:before {
+    content: '02';
+  }
+
+  .work-it:before {
+    content: '03';
+  }
+
+  .appeals-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
 }
 
