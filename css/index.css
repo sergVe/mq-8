@@ -160,6 +160,32 @@
   font-size: 16px;
 }
 
+.footer {
+  position: relative;
+}
+
+.footer:before, .footer:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer:before {
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.footer:after {
+  background-color: rgba(28, 31, 64, 0.9);
+  z-index: 2;
+}
+
 .footer__text {
   font-size: 14px;
 }
@@ -175,12 +201,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .header__heading {
     font-size: 28px;
     margin-bottom: 90px;
   }
 
-  .header__download {
+  .header__download, .footer__download {
     font-size: 8px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -194,7 +221,6 @@
   .header__download:nth-of-type(2) {
     margin-top: 16px;
   }
-
 
   .header:before {
     background-image: url("../images/football_767.jpg");
@@ -255,6 +281,7 @@
     max-width: calc(100% - 10px);
     z-index: 2;
   }
+
   .biorobot__img--footballer {
     left: 70px;
   }
@@ -269,7 +296,7 @@
 
   .negro-appeals-list {
   }
-  
+
   .negro-appeals-list__item {
     background-color: #fafafa;
     padding-top: 80px;
@@ -280,17 +307,17 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .negro-appeals-list__item--second {
     background-color: #f5f4f9;
   }
-  
+
   .negro-appeals-list__item--third {
     background-color: #5e42b0;
   }
 
   .negro-appeals-list__item:before {
-    top:80px;
+    top: 80px;
     left: 20px;
   }
 
@@ -352,6 +379,40 @@
     padding-right: 20px;
   }
 
+  .footer {
+    padding-top: 100px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_767.jpg");
+  }
+
+  .footer__logo {
+    fill: #ffffff;
+    width: 75px;
+    height: 75px;
+    padding: 14px 8px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    background-color: #6e4fca;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  
+  .footer__heading {
+    color: #ffffff;
+
+  }
+
+  .footer__text {
+    color: #9b8ec1;
+    text-transform: uppercase;
+    margin-bottom: 76px;
+    margin-left: 8px;
+  }
 
 }
 
