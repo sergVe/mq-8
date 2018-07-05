@@ -218,7 +218,8 @@
     border-radius: 28px;
   }
 
-  .header__download:nth-of-type(2) {
+  .header__download:nth-of-type(2),
+  .footer__download:nth-of-type(2) {
     margin-top: 16px;
   }
 
@@ -226,7 +227,8 @@
     background-image: url("../images/football_767.jpg");
   }
 
-  .header__logo-text {
+  .header__logo-text,
+  .footer__logo-text{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -241,12 +243,18 @@
     margin-left: 1.52em;
   }
 
-  .header__download--first, .header__download--second {
+  .header__download--first,
+  .header__download--second,
+  .footer__download--first,
+  .footer__download--second {
     display: block;
     position: relative;
   }
 
-  .header__download--first:before, .header__download--second:before {
+  .header__download--first:before,
+  .header__download--second:before,
+  .footer__download--first:before,
+  .footer__download--second:before {
     content: '';
     position: absolute;
     top: -3px;
@@ -255,11 +263,13 @@
     height: 22px;
   }
 
-  .header__download--apple:before {
+  .header__download--apple:before,
+  .footer__download--apple:before {
     background-image: url("../images/svg/apple_logo_black.svg");
   }
 
-  .header__download--google:before {
+  .header__download--google:before,
+  .footer__download--google:before {
     background-image: url("../images/svg/google-play.svg");
   }
 
@@ -342,7 +352,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 294px;
+    top: 274px;
     left: 20px;
     font-size: 14px;
     font-family: "Open Sans Bold", Georgia, sans-serif;
@@ -355,7 +365,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 334px;
+    top: 314px;
     left: 47px;
     height: 0;
     width: 16px;
@@ -381,6 +391,7 @@
 
   .footer {
     padding-top: 100px;
+    padding-bottom: 10px;
   }
 
   .footer:before {
@@ -401,7 +412,7 @@
     margin-right: auto;
     margin-bottom: 60px;
   }
-  
+
   .footer__heading {
     color: #ffffff;
 
@@ -412,6 +423,14 @@
     text-transform: uppercase;
     margin-bottom: 76px;
     margin-left: 8px;
+  }
+
+  .footer__download:nth-of-type(2) {
+    margin-bottom: 80px;
+  }
+
+  .footer__logo-text {
+    margin-bottom: 0;
   }
 
 }
