@@ -541,6 +541,11 @@ html {
     font-family: "Open Sans Light", Georgia, sans-serif;
   }
 
+  .footer__download--second,
+  .header__download--second {
+    font-family: "Open Sans Bold", Georgia, sans-serif;
+  }
+
   .header__download--first,
   .header__download--second {
     position: relative;
@@ -564,6 +569,7 @@ html {
 
   .header__download--google:before {
     background-image: url("../images/svg/google-play.svg");
+    left: -64px;
   }
 
 }
