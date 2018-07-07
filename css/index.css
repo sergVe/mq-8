@@ -67,6 +67,9 @@ html {
 .logo-text {
   width: 133px;
   height: 36px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -176,6 +179,12 @@ html {
 
 .footer {
   position: relative;
+}
+
+.footer__text {
+  color: #9b8ec1;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .footer:before, .footer:after {
@@ -526,12 +535,14 @@ html {
     flex-wrap: nowrap;
   }
 
-  .header__download:first-of-type {
+  .header__download:first-of-type,
+  .footer__download:first-of-type {
     margin-left: auto;
     margin-right: 15px;
   }
 
-  .header__download:last-of-type {
+  .header__download:last-of-type,
+  .footer__download:last-of-type {
     margin-right: auto;
     margin-left: 15px;
   }
@@ -547,7 +558,9 @@ html {
   }
 
   .header__download--first,
-  .header__download--second {
+  .header__download--second,
+  .footer__download--first,
+  .footer__download--second {
     position: relative;
   }
 
@@ -563,13 +576,55 @@ html {
     height: 36px;
   }
 
-  .header__download--apple:before {
+  .header__download--apple:before,
+  .footer__download--apple:before {
     background-image: url("../images/svg/apple_logo_black.svg");
   }
 
-  .header__download--google:before {
+  .header__download--google:before,
+  .footer__download--google:before {
     background-image: url("../images/svg/google-play.svg");
     left: -64px;
+  }
+
+  .footer {
+    padding-top: 200px;
+    padding-bottom: 21px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_1280.jpg");
+  }
+
+  .footer__logo {
+    width: 102px;
+    height: 84px;
+    padding: 25px 12px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #6e4fca;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+    box-sizing: content-box;
+  }
+
+  .footer__heading {
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    margin-bottom: calc(28px - 18px);
+  }
+
+  .footer__text {
+    font-size: 36px;
+    letter-spacing: 0;
+    margin-bottom: 290px;
+  }
+
+  .inner__wrapper-download--footer {
+    margin-bottom: 55px;
   }
 
 }
