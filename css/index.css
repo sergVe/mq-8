@@ -52,10 +52,9 @@ html {
 }
 
 .header:before {
-  background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat center;
   z-index: 1;
 }
 
@@ -88,8 +87,7 @@ html {
   color: #ffffff;
 }
 
-.biorobot__heading {
-  font-size: 5rem;
+.robot__heading {
   color: #e7e7e7;
 }
 
@@ -165,7 +163,7 @@ html {
   color: #ffffff;
 }
 
-.biorobot__text {
+.robot__text {
   font-size: 15px;
 }
 
@@ -197,10 +195,9 @@ html {
 }
 
 .footer:before {
-  background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat center;
   z-index: 1;
 }
 
@@ -296,16 +293,17 @@ html {
     background-image: url("../images/svg/google-play.svg");
   }
 
-  .biorobot {
+  .robot {
     padding-top: 25px;
     position: relative;
   }
 
-  .biorobot__heading {
+  .robot__heading {
     margin-left: 20px;
+    font-size: 5rem;
   }
 
-  .biorobot__img {
+  .robot__img {
     display: block;
     position: absolute;
     margin-left: auto;
@@ -315,15 +313,15 @@ html {
     z-index: 2;
   }
 
-  .biorobot__img--footballer {
+  .robot__img--footballer {
     left: 70px;
   }
 
-  .biorobot__img--backetballer {
+  .robot__img--backetballer {
     left: 9px;
   }
 
-  .biorobot__inner {
+  .robot__inner {
     margin-top: 233px;
   }
 
@@ -627,5 +625,90 @@ html {
   .inner__wrapper-download--footer {
     margin-bottom: 55px;
   }
+
+  /*
+   *  robots
+  */
+  .robot {
+    position: relative;
+    padding-top: calc(85px - 2em - 10px);
+  }
+
+  .robot__heading {
+    font-size: 80px;
+    letter-spacing: 0;
+    width: 58%;
+    margin-left: auto;
+    margin-bottom: calc(60px - 0.47em - 24px);
+  }
+
+  .robot__heading--players {
+    margin-left: 20px;
+    margin-right: auto;
+
+  }
+
+  .negro-appeals-list__heading {
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    margin-bottom: calc(35px - 16px);
+  }
+
+  .robot__text {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+  }
+
+  .item-inner {
+    width: 58%;
+    margin-left: auto;
+    padding-right: 20px;
+  }
+
+  .item-inner--players {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+  .negro-appeals-list__item:before {
+    top: 30px;
+    left: calc(42% + 0px);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+
+  .negro-appeals-list__item--players:before {
+    left: 20px;
+  }
+
+  .robot__img {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 90px;
+    right: calc(55% - 10px);
+    max-width: 100%;
+    z-index: 2;
+  }
+
+  .robot__img--players {
+    top: 40px;
+    right: 0;
+
+  }
+
+  .negro-appeals-list__item {
+    min-height: 235px;
+    padding-top: 30px;
+  }
+
+  .negro-appeals-list__item--first {
+    background-color: #ffffff;
+  }
+
+
 
 }
