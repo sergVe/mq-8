@@ -488,7 +488,8 @@ html {
 
   }
 
-  .header__logo-text {
+  .header__logo-text,
+  .footer__logo-text {
     width: 215px;
     height: 57px;
     margin-bottom: 180px;
