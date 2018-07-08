@@ -506,6 +506,7 @@ html {
     margin-bottom: 312px;
     display: flex;
     flex-direction: column;
+
   }
 
   .heading__first {
@@ -802,5 +803,132 @@ html {
   .appeals__heading--work-it:before {
     content: '03';
   }
+
+}
+
+@media (min-width: 961px) {
+
+  .page-wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /**************************************
+  * header
+  *************************************/
+  .header {
+    padding-top: 45px;
+    padding-bottom: 110px;
+  }
+
+  .header:before {
+    background-image: url("../images/football_1920.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .header__logo-text,
+  .footer__logo-text {
+    width: 191px;
+    height: 52px;
+    margin-bottom: 180px;
+    align-self: center;
+  }
+
+  .header__heading {
+    font-size: 90px;
+    letter-spacing: 0.05em;
+    line-height: 1.0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+  }
+
+  .heading__first {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+
+  .heading__second {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  .header__download, .footer__download {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 110px;
+    background-color: #5e42b0;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 312px;
+  }
+
+  .inner__wrapper-download {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .header__download:first-of-type,
+  .footer__download:first-of-type {
+    margin-left: auto;
+    margin-right: 25px;
+  }
+
+  .header__download:last-of-type,
+  .footer__download:last-of-type {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  .header__download--apple,
+  .header__download--google {
+    font-family: "Open Sans Light", Georgia, sans-serif;
+  }
+
+  .footer__download--second,
+  .header__download--second {
+    font-family: "Open Sans Bold", Georgia, sans-serif;
+  }
+
+  .header__download--first,
+  .header__download--second,
+  .footer__download--first,
+  .footer__download--second {
+    position: relative;
+  }
+
+  .header__download--first:before,
+  .header__download--second:before,
+  .footer__download--first:before,
+  .footer__download--second:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -68px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .header__download--apple:before,
+  .footer__download--apple:before {
+    background-image: url("../images/svg/apple_logo_black.svg");
+  }
+
+  .header__download--google:before,
+  .footer__download--google:before {
+    background-image: url("../images/svg/google-play.svg");
+    left: -64px;
+  }
+
 
 }
