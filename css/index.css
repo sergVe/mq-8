@@ -444,7 +444,7 @@ html {
 
   .footer__heading {
     font-size: 3.2rem;
-
+    text-align: center;
   }
 
   .footer__text {
@@ -466,6 +466,10 @@ html {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
+
+  /**************************************
+   * header
+   *************************************/
   .header {
     padding-top: 38px;
     padding-bottom: 90px;
@@ -473,6 +477,8 @@ html {
 
   .header:before {
     background-image: url("../images/football_1280.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 
   .inner {
@@ -510,7 +516,7 @@ html {
   .heading__second {
     margin-left: 165px;
     align-self: flex-end;
-    /* margin-right: 20px;*/
+
   }
 
   .header__download, .footer__download {
@@ -586,6 +592,9 @@ html {
     left: -64px;
   }
 
+  /************************************
+   * footer
+   ***********************************/
   .footer {
     padding-top: 200px;
     padding-bottom: 21px;
@@ -614,6 +623,7 @@ html {
     font-size: 80px;
     letter-spacing: 0.05em;
     margin-bottom: -6px;
+    text-align: center;
   }
 
   .footer__text {
@@ -633,13 +643,13 @@ html {
 
   .footer:before {
     background-image: url("../images/game_1280.jpg");
-   -webkit-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
   }
 
-  /*
+  /*********************
    *  robots
-  */
+   ********************/
   .robot {
     position: relative;
     padding-top: calc(85px - 2em - 10px);
@@ -720,6 +730,9 @@ html {
     background-color: #ffffff;
   }
 
+  /*********************************
+   * appeals
+   ********************************/
   .appeals-inner {
     padding-left: 20px;
     max-height: 338px;
