@@ -613,17 +613,28 @@ html {
   .footer__heading {
     font-size: 80px;
     letter-spacing: 0.05em;
-    margin-bottom: calc(28px - 18px);
+    margin-bottom: -6px;
   }
 
   .footer__text {
     font-size: 36px;
     letter-spacing: 0;
     margin-bottom: 290px;
+    line-height: 1.4;
   }
 
   .inner__wrapper-download--footer {
     margin-bottom: 55px;
+  }
+
+  .footer__logo-text {
+    margin-bottom: 20px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_1280.jpg");
+   -webkit-background-size: cover;
+    background-size: cover;
   }
 
   /*
@@ -709,6 +720,74 @@ html {
     background-color: #ffffff;
   }
 
+  .appeals-inner {
+    padding-left: 20px;
+    max-height: 338px;
 
+  }
+
+  .appeals__img {
+    margin-bottom: calc(90px - 4px);
+  }
+
+  .appeals__heading {
+    font-size: 80px;
+    color: rgba(193, 193, 193, 0.4);
+    letter-spacing: 0;
+    line-height: 0.75;
+    margin-bottom: calc(43px - 5px);
+  }
+
+  .appeals__text {
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    line-height: 1.167;
+    margin-bottom: calc(103px - 4px);
+  }
+
+  .appeals__heading {
+    position: relative;
+  }
+
+  .appeals__heading:before {
+    content: '01';
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: -175px;
+    left: 0;
+    font-size: 24px;
+    font-family: "Open Sans Bold", Georgia, sans-serif;
+    color: #ffffff;
+    padding: 42px 45px 54px;
+    background-color: #5e42b0;
+    z-index: 2;
+  }
+
+  .appeals__heading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -107px;
+    left: 48px;
+    height: 0;
+    width: 20px;
+    border-top: 5px solid #8f7bc8;
+    z-index: 2;
+  }
+
+  .appeals__heading--be-active:before {
+    content: '01';
+  }
+
+  .appeals__heading--find-contact:before {
+    content: '02';
+  }
+
+  .appeals__heading--work-it:before {
+    content: '03';
+  }
 
 }

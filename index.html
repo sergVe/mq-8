@@ -153,7 +153,24 @@
       </section>
 
       <section class="be-active appeals">
-        <img src="./images/be-active_640.jpg" alt="be active" class="appeals__img">
+        <picture>
+          <source
+              class="appeals__img"
+              media="(max-width: 640px)"
+              srcset="./images/be-active_640.jpg"
+          >
+          <source
+              class="appeals__img"
+              media="(min-width: 641px) and (max-width: 960px)"
+              srcset="./images/be-active_960.jpg"
+          >
+          <source
+              class="appeals__img"
+              media="(min-width: 961px)"
+              srcset="./images/be-active_1024.jpg"
+          >
+          <img src="./images/be-active_640.jpg" alt="be active" class="appeals__img">
+        </picture>
 
         <div class="appeals-inner">
           <h2 class="heading appeals__heading appeals__heading--be-active">Be active</h2>
@@ -163,7 +180,13 @@
       </section>
 
       <section class="find-contact appeals">
-        <img src="./images/find-contact_640.jpg" alt="find contact" class="appeals__img">
+        <picture>
+          <source class="appeals__img" media="(max-width: 640px)" srcset="./images/find-contact_640.jpg">
+          <source class="appeals__img" media="(min-width: 641px) and (max-width: 960px)"
+                  srcset="./images/find-contact_960.jpg">
+          <source class="appeals__img" media="(min-width: 961px)" srcset="./images/find-contact_1024.jpg">
+          <img src="./images/find-contact_640.jpg" alt="find contact" class="appeals__img">
+        </picture>
 
         <div class="appeals-inner">
           <h2 class="heading appeals__heading appeals__heading--find-contact">Find Contact</h2>
@@ -172,7 +195,24 @@
 
       </section>
       <section class="work-it appeals">
-        <img src="./images/work-it_640.jpg" alt="work it" class="appeals__img">
+        <picture>
+          <source
+              class="appeals__img"
+              media="(max-width: 640px)"
+              srcset="./images/work-it_640.jpg"
+          >
+          <source
+              class="appeals__img"
+              media="(min-width: 641px) and (max-width: 960px)"
+              srcset="./images/work-it_960.jpg"
+          >
+          <source
+              class="appeals__img"
+              media="(min-width: 961px)"
+              srcset="./images/work-it_1024.jpg">
+          <img src="./images/work-it_640.jpg" alt="work it" class="appeals__img"
+          >
+        </picture>
 
         <div class="appeals-inner">
           <h2 class="heading appeals__heading appeals__heading--work-it">Work It</h2>
