@@ -34,12 +34,22 @@ html {
   position: relative;
 }
 
+.inner__wrapper-download {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .download {
   font-family: "Open Sans Reg", Georgia, sans-serif;
   color: #ffffff;
   display: block;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .header:before, .header:after {
@@ -85,6 +95,25 @@ html {
 .header__heading {
   font-size: 2.8rem;
   color: #ffffff;
+  text-align: center;
+}
+
+.header__download--first,
+.header__download--second,
+.footer__download--first,
+.footer__download--second {
+  position: relative;
+}
+
+.header__download--apple:before,
+.footer__download--apple:before {
+  background-image: url("../images/svg/apple_logo_black.svg");
+}
+
+.header__download--google:before,
+.footer__download--google:before {
+  background-image: url("../images/svg/google-play.svg");
+  left: -64px;
 }
 
 .robot__heading {
@@ -108,7 +137,7 @@ html {
 
 .footer__heading {
   color: #ffffff;
-
+  text-align: center;
 }
 
 .negro-appeals-list {
@@ -171,6 +200,10 @@ html {
   font-size: 1.6rem;
 }
 
+.appeals__img {
+  max-width: 100%;
+}
+
 .footer__logo {
   fill: #ffffff;
 }
@@ -206,14 +239,14 @@ html {
   z-index: 2;
 }
 
-@media (min-width: 300px) and (max-width: 640px) {
+@media (max-width: 640px) {
   .header {
     padding-top: 32px;
     padding-bottom: 84px;
   }
 
   .inner {
-    width: 280px;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -232,11 +265,32 @@ html {
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
     border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 280px;
   }
 
   .header__download:nth-of-type(2),
   .footer__download:nth-of-type(2) {
     margin-top: 16px;
+  }
+
+  .header__download--first:before,
+  .header__download--second:before,
+  .footer__download--first:before,
+  .footer__download--second:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -68px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .header__download--google:before,
+  .footer__download--google:before {
+    left: -64px;
   }
 
   .header:before {
@@ -482,11 +536,9 @@ html {
   }
 
   .inner {
-    width: calc(100% - 18px);
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
     display: flex;
     flex-direction: column;
 
@@ -520,6 +572,10 @@ html {
 
   }
 
+  .inner__wrapper-download {
+    flex-wrap: wrap;
+  }
+
   .header__download, .footer__download {
     font-size: 14px;
     padding-top: 25px;
@@ -531,26 +587,18 @@ html {
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-
     flex: 0 0 312px;
-  }
-
-  .inner__wrapper-download {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
   }
 
   .header__download:first-of-type,
   .footer__download:first-of-type {
-    margin-left: auto;
-    margin-right: 15px;
+
   }
 
   .header__download:last-of-type,
   .footer__download:last-of-type {
-    margin-right: auto;
-    margin-left: 15px;
+
+
   }
 
   .header__download--apple,
@@ -561,13 +609,6 @@ html {
   .footer__download--second,
   .header__download--second {
     font-family: "Open Sans Bold", Georgia, sans-serif;
-  }
-
-  .header__download--first,
-  .header__download--second,
-  .footer__download--first,
-  .footer__download--second {
-    position: relative;
   }
 
   .header__download--first:before,
@@ -582,14 +623,8 @@ html {
     height: 36px;
   }
 
-  .header__download--apple:before,
-  .footer__download--apple:before {
-    background-image: url("../images/svg/apple_logo_black.svg");
-  }
-
   .header__download--google:before,
   .footer__download--google:before {
-    background-image: url("../images/svg/google-play.svg");
     left: -64px;
   }
 
@@ -624,7 +659,6 @@ html {
     font-size: 80px;
     letter-spacing: 0.05em;
     margin-bottom: -6px;
-    text-align: center;
   }
 
   .footer__text {
@@ -806,6 +840,23 @@ html {
 
 }
 
+@media (min-width: 684px) {
+  .inner__wrapper-download {
+    flex-wrap: nowrap;
+  }
+
+  .header__download:first-of-type,
+  .footer__download:first-of-type {
+    margin-right: 15px;
+  }
+
+  .header__download:last-of-type,
+  .footer__download:last-of-type {
+    margin-left: 15px;
+  }
+
+}
+
 @media (min-width: 961px) {
 
   .page-wrapper {
@@ -845,6 +896,7 @@ html {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 120px;
+    text-align: center;
   }
 
   .heading__first {
@@ -872,22 +924,19 @@ html {
     flex: 0 0 312px;
   }
 
-  .inner__wrapper-download {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
   .header__download:first-of-type,
   .footer__download:first-of-type {
-    margin-left: auto;
-    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .header__download:last-of-type,
   .footer__download:last-of-type {
-    margin-right: auto;
-    margin-left: 15px;
+    margin-left: 25px;
+  }
+
+  .header__download--apple,
+  .header__download--google {
+    font-family: "Open Sans Light", Georgia, sans-serif;
   }
 
   .header__download--apple,
@@ -898,13 +947,6 @@ html {
   .footer__download--second,
   .header__download--second {
     font-family: "Open Sans Bold", Georgia, sans-serif;
-  }
-
-  .header__download--first,
-  .header__download--second,
-  .footer__download--first,
-  .footer__download--second {
-    position: relative;
   }
 
   .header__download--first:before,
@@ -919,16 +961,96 @@ html {
     height: 36px;
   }
 
-  .header__download--apple:before,
-  .footer__download--apple:before {
-    background-image: url("../images/svg/apple_logo_black.svg");
-  }
-
   .header__download--google:before,
   .footer__download--google:before {
-    background-image: url("../images/svg/google-play.svg");
     left: -64px;
   }
 
+  /*********************
+  *  robots
+  ********************/
+  .robot {
+    position: relative;
+    padding-top: calc(112px - 2em - 10px);
+    overflow-x: hidden;
+  }
 
+  .athletes {
+    z-index: 3;
+  }
+
+  .robot__heading {
+    font-size: 80px;
+    letter-spacing: 0;
+    width: 58%;
+    margin-left: 52.3%;
+    margin-right: auto;
+    margin-bottom: 2px;
+  }
+
+  .negro-appeals-list__item {
+    padding-top: calc(64px - 0.75em);
+    padding-bottom: 60px;
+  }
+
+  .robot__heading--players {
+    margin-left: calc(16.8% + 12px);
+    margin-right: auto;
+
+  }
+
+  .negro-appeals-list__heading {
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+
+  .robot__text {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+  }
+
+  .item-inner {
+    width: 37.4%;
+    margin-left: auto;
+    margin-right: 10%;
+    padding-right: 20px;
+
+  }
+
+  .item-inner--players {
+    margin-left: 16.8%;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+  .negro-appeals-list__item:before {
+    top: 60px;
+    left: calc(52.7% + 0px);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+
+  .negro-appeals-list__item--players:before {
+    left: calc(16.8% + 20px);
+
+  }
+
+  .robot__img {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    right: calc(55% - 10px);
+    max-width: 100%;
+    z-index: 4;
+  }
+
+  .robot__img--players {
+    top: -30px;
+    left: 42.1%;
+    z-index: 2;
+  }
 }
