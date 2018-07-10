@@ -1,0 +1,325 @@
+@media (min-width: 641px) and (max-width: 960px) {
+
+  /**************************************
+   * header
+   *************************************/
+  .header {
+    padding-top: 38px;
+    padding-bottom: 90px;
+  }
+
+  .header:before {
+    background-image: url("../images/football_1280.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .inner {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .header__logo-text,
+  .footer__logo-text {
+    width: 215px;
+    height: 57px;
+    margin-bottom: 180px;
+    align-self: center;
+
+  }
+
+  .header__heading {
+    font-size: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 312px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 98%;
+  }
+
+  .heading__first {
+    margin-left: 10.7%;
+    align-self: flex-start;
+  }
+
+  .heading__second {
+    margin-left: 25.2%;
+    margin-right: 0;
+    align-self: flex-end;
+    min-width: 63.3%;
+  }
+
+  .inner__wrapper-download {
+    flex-wrap: wrap;
+  }
+
+  .header__download, .footer__download {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 110px;
+    background-color: #5e42b0;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 312px;
+  }
+
+  .header__download:first-of-type,
+  .footer__download:first-of-type {
+
+  }
+
+  .header__download:last-of-type,
+  .footer__download:last-of-type {
+
+
+  }
+
+  .header__download--apple,
+  .header__download--google {
+    font-family: "Open Sans Light", Georgia, sans-serif;
+  }
+
+  .footer__download--second,
+  .header__download--second {
+    font-family: "Open Sans Bold", Georgia, sans-serif;
+  }
+
+  .header__download--first:before,
+  .header__download--second:before,
+  .footer__download--first:before,
+  .footer__download--second:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -68px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .header__download--google:before,
+  .footer__download--google:before {
+    left: -64px;
+  }
+
+  /************************************
+   * footer
+   ***********************************/
+  .footer {
+    padding-top: 200px;
+    padding-bottom: 21px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_1280.jpg");
+  }
+
+  .footer__logo {
+    width: 102px;
+    height: 84px;
+    padding: 25px 12px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #6e4fca;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+    box-sizing: content-box;
+  }
+
+  .footer__heading {
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    margin-bottom: -6px;
+  }
+
+  .footer__text {
+    font-size: 36px;
+    letter-spacing: 0;
+    margin-bottom: 290px;
+    line-height: 1.4;
+  }
+
+  .inner__wrapper-download--footer {
+    margin-bottom: 55px;
+  }
+
+  .footer__logo-text {
+    margin-bottom: 20px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_1280.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  /*********************
+   *  robots
+   ********************/
+  .robot {
+    position: relative;
+    padding-top: calc(85px - 2em - 10px);
+  }
+
+  .robot__heading {
+    font-size: 80px;
+    letter-spacing: 0;
+    width: 58%;
+    margin-left: auto;
+    margin-bottom: calc(60px - 0.47em - 24px);
+  }
+
+  .robot__heading--players {
+    margin-left: 20px;
+    margin-right: auto;
+
+  }
+
+  .negro-appeals-list__heading {
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    margin-bottom: calc(35px - 16px);
+  }
+
+  .robot__text {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+  }
+
+  .item-inner {
+    width: 58%;
+    margin-left: auto;
+    padding-right: 20px;
+  }
+
+  .item-inner--players {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+  .negro-appeals-list__item:before {
+    top: 30px;
+    left: calc(42% + 0px);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+
+  .negro-appeals-list__item--players:before {
+    left: 20px;
+  }
+
+  .robot__img {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 90px;
+    right: calc(55% - 10px);
+    max-width: 100%;
+    z-index: 2;
+  }
+
+  .robot__img--players {
+    top: 40px;
+    right: 0;
+
+  }
+
+  .negro-appeals-list__item {
+    min-height: 235px;
+    padding-top: 30px;
+  }
+
+  .negro-appeals-list__item--first {
+    background-color: #ffffff;
+  }
+
+  /*********************************
+   * appeals
+   ********************************/
+  .appeals-inner {
+    padding-left: 20px;
+    max-height: 338px;
+
+  }
+
+  .appeals__img {
+    margin-bottom: calc(90px - 4px);
+  }
+
+  .appeals__heading {
+    font-size: 80px;
+    color: rgba(193, 193, 193, 0.4);
+    letter-spacing: 0;
+    line-height: 0.75;
+    margin-bottom: calc(43px - 5px);
+  }
+
+  .appeals__text {
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    line-height: 1.167;
+    margin-bottom: calc(103px - 4px);
+  }
+
+  .appeals__heading {
+    position: relative;
+  }
+
+  .appeals__heading:before {
+    content: '01';
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: -175px;
+    left: 0;
+    font-size: 24px;
+    font-family: "Open Sans Bold", Georgia, sans-serif;
+    color: #ffffff;
+    padding: 42px 45px 54px;
+    background-color: #5e42b0;
+    z-index: 2;
+  }
+
+  .appeals__heading:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -107px;
+    left: 48px;
+    height: 0;
+    width: 20px;
+    border-top: 5px solid #8f7bc8;
+    z-index: 2;
+  }
+
+  .appeals__heading--be-active:before {
+    content: '01';
+  }
+
+  .appeals__heading--find-contact:before {
+    content: '02';
+  }
+
+  .appeals__heading--work-it:before {
+    content: '03';
+  }
+
+}
