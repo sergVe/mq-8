@@ -267,7 +267,7 @@ html {
 
 @media (max-width: 640px) {
   .page-wrapper {
-    min-width: 290px;
+    min-width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -288,7 +288,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-left: auto;
+    margin-left: 6.25vw;
     margin-right: auto;
   }
 
@@ -598,8 +598,8 @@ html {
 
   .inner {
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+   /* margin-left: auto;
+    margin-right: auto;*/
     display: flex;
     flex-direction: column;
 
