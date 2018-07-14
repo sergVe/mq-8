@@ -25,6 +25,10 @@ html {
   src: url("../fonts/OpenSans-Light.ttf") format("ttf");
 }
 
+/**************************************
+ * header
+ *************************************/
+
 .header {
   position: relative;
 }
@@ -95,7 +99,6 @@ html {
 .header__heading {
   font-size: 2.8rem;
   color: #ffffff;
-  text-align: center;
 }
 
 .header__download--first,
@@ -116,8 +119,16 @@ html {
   left: -64px;
 }
 
+/*********************
+  *  robots
+******************/
+
 .robot__heading {
   color: #e7e7e7;
+}
+
+.robot__text {
+  font-size: 15px;
 }
 
 .negro-appeals-list__heading {
@@ -125,6 +136,10 @@ html {
   color: #c1c1c1;
   padding-left: 2.7rem;
 }
+
+/*********************************
+  * appeals
+ ********************************/
 
 .appeals {
   position: relative;
@@ -140,9 +155,14 @@ html {
   color: #e7e7e7;
 }
 
-.footer__heading {
-  color: #ffffff;
-  text-align: center;
+.appeals__text {
+  font-size: 1.6rem;
+}
+
+.appeals__images {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 .negro-appeals-list {
@@ -188,6 +208,10 @@ html {
   border-bottom-color: #ffffff;
 }
 
+/*********************************
+ *  text
+ ********************************/
+
 .text {
   font-family: "Open Sans Reg", Georgia, sans-serif;
   line-height: 2rem;
@@ -197,26 +221,21 @@ html {
   color: #ffffff;
 }
 
-.robot__text {
-  font-size: 15px;
-}
+/**************************************************
+ * footer
+ *************************************************/
 
-.appeals__text {
-  font-size: 1.6rem;
-}
-
-.appeals__images {
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
+.footer {
+  position: relative;
 }
 
 .footer__logo {
   fill: #ffffff;
 }
 
-.footer {
-  position: relative;
+.footer__heading {
+  color: #ffffff;
+  text-align: center;
 }
 
 .footer__text {
@@ -252,13 +271,13 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /******************************
+   *  header
+   *****************************/
   .header {
     padding-top: 32px;
     padding-bottom: 84px;
-  }
-
-  .inner {
-
   }
 
   .header__heading {
@@ -271,7 +290,6 @@ html {
     justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
-    border: 1px dotted darkgray;
   }
 
   .heading__first {
@@ -303,7 +321,6 @@ html {
     display: flex;
     flex-flow: column wrap;
     width: 280px;
-    /*justify-content: center;*/
     align-content: flex-start;
     flex: none;
   }
@@ -376,13 +393,16 @@ html {
     background-image: url("../images/svg/google-play.svg");
   }
 
+  /********************************
+   *  robot
+   *******************************/
   .robot {
     padding-top: 25px;
     position: relative;
   }
 
   .robot__heading {
-    margin-left: 20px;
+    margin-left: 6.25vw;
     font-size: 5rem;
   }
 
@@ -397,18 +417,15 @@ html {
   }
 
   .robot__img--footballer {
-    left: 70px;
+    left: 21.85vw;
   }
 
-  .robot__img--backetballer {
-    left: 9px;
+  .robot__img--players {
+    left: 2.8vw;
   }
 
   .robot__inner {
     margin-top: 233px;
-  }
-
-  .negro-appeals-list {
   }
 
   .negro-appeals-list__item {
@@ -418,7 +435,7 @@ html {
   }
 
   .item-inner {
-    padding-left: 20px;
+    padding-left: 6.25vw;
     padding-right: 20px;
   }
 
@@ -432,13 +449,16 @@ html {
 
   .negro-appeals-list__item:before {
     top: 80px;
-    left: 20px;
+    left: 6.25vw;
   }
 
   .negro-appeals-list__heading {
     margin-bottom: 30px;
   }
 
+  /**************************************
+   *  appeals
+   *************************************/
   .appeals__images {
     margin-bottom: calc(36px - 1em);
     width: 100%;
@@ -463,10 +483,6 @@ html {
 
   .appeals {
     padding-bottom: 80px;
-  }
-
-  .appeals__heading {
-    position: relative;
   }
 
   .appeals__heading:before {
@@ -511,10 +527,13 @@ html {
   }
 
   .appeals-inner {
-    padding-left: 20px;
+    padding-left: 6.25vw;
     padding-right: 20px;
   }
 
+  /**************************************
+   *  footer
+   *************************************/
   .footer {
     padding-top: 100px;
     padding-bottom: 10px;
@@ -671,70 +690,9 @@ html {
     content: '';
     position: absolute;
     top: 0;
-    /*left: -68px;*/
     left: -28%;
     width: 36px;
     height: 36px;
-  }
-
-  .header__download--google:before,
-  .footer__download--google:before {
-    /*left: -64px;*/
-    /* left: -87px;*/
-  }
-
-  /************************************
-   * footer
-   ***********************************/
-  .footer {
-    padding-top: 200px;
-    padding-bottom: 21px;
-  }
-
-  .footer:before {
-    background-image: url("../images/game_1280.jpg");
-  }
-
-  .footer__logo {
-    width: 102px;
-    height: 84px;
-    padding: 25px 12px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    background-color: #6e4fca;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 82px;
-    box-sizing: content-box;
-  }
-
-  .footer__heading {
-    font-size: 80px;
-    letter-spacing: 0.05em;
-    margin-bottom: -6px;
-  }
-
-  .footer__text {
-    font-size: 36px;
-    letter-spacing: 0;
-    margin-bottom: 290px;
-    line-height: 1.4;
-  }
-
-  .inner__wrapper-download--footer {
-    margin-bottom: 55px;
-  }
-
-  .footer__logo-text {
-    margin-bottom: 20px;
-  }
-
-  .footer:before {
-    background-image: url("../images/game_1280.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
   }
 
   /*********************
@@ -853,7 +811,6 @@ html {
     letter-spacing: 0;
     line-height: 0.75;
     margin-bottom: 4.7vw;
-    border: 1px dotted darkred;
   }
 
   .appeals__text {
@@ -906,6 +863,60 @@ html {
 
   .appeals__heading--work-it:before {
     content: '03';
+  }
+
+  /************************************
+  * footer
+  ***********************************/
+  .footer {
+    padding-top: 200px;
+    padding-bottom: 21px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_1280.jpg");
+  }
+
+  .footer__logo {
+    width: 102px;
+    height: 84px;
+    padding: 25px 12px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #6e4fca;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+    box-sizing: content-box;
+  }
+
+  .footer__heading {
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    margin-bottom: -6px;
+  }
+
+  .footer__text {
+    font-size: 36px;
+    letter-spacing: 0;
+    margin-bottom: 290px;
+    line-height: 1.4;
+  }
+
+  .inner__wrapper-download--footer {
+    margin-bottom: 55px;
+  }
+
+  .footer__logo-text {
+    margin-bottom: 20px;
+  }
+
+  .footer:before {
+    background-image: url("../images/game_1280.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 
 }
@@ -975,7 +986,6 @@ html {
     margin-left: 9.89%;
     margin-right: 5%;
     margin-bottom: 120px;
-    border: 1px dotted darkred;
   }
 
   .heading__first {
@@ -984,7 +994,6 @@ html {
   }
 
   .heading__second {
-    border: 1px dotted darkgrey;
     flex: 1 1 auto;
     margin-right: 0;
     padding-left: 27.86%;
@@ -1177,7 +1186,6 @@ html {
     margin-bottom: 11%;
     line-height: 1.1;
     font-size: 80px;
-    border: 1px dotted darkred;
   }
 
   .appeals__heading--find-contact {
@@ -1188,7 +1196,6 @@ html {
     font-size: 24px;
     line-height: 1.3;
     margin-top: 2.6%;
-    border: 1px dotted darkred;
   }
 
   .appeals__text--be-active {
@@ -1319,7 +1326,6 @@ html {
   }
 
   .footer__logo-text {
-    border: 1px dotted darkred;
     margin-bottom: 0;
   }
 
@@ -1333,7 +1339,6 @@ html {
 
 @media (min-width: 961px) and (max-width: 1150px) {
   .heading__second {
-
     padding-left: 10.33vw;
   }
 }
