@@ -712,7 +712,7 @@ html {
   }
 
   .robot__heading--players {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-right: auto;
 
   }
@@ -720,13 +720,23 @@ html {
   .negro-appeals-list__heading {
     font-size: 32px;
     letter-spacing: 0.05em;
+    padding-left: 43px;
     margin-bottom: calc(35px - 16px);
+  }
+
+  .negro-appeals-list__heading--athletes {
+    padding-left: 35px;
   }
 
   .robot__text {
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.7em;
+    padding-left: 11px;
+  }
+
+  .robot__text--athletes {
+    padding-left: 0;
   }
 
   .item-inner {
@@ -743,13 +753,13 @@ html {
 
   .negro-appeals-list__item:before {
     top: 30px;
-    left: calc(42% + 0px);
+    left: 33px;
     font-size: 18px;
     letter-spacing: 0.05em;
   }
 
-  .negro-appeals-list__item--players:before {
-    left: 20px;
+  .negro-appeals-list__item--athletes:before {
+    left: calc(43% - 5px);
   }
 
   .robot__img {
@@ -782,7 +792,7 @@ html {
    * appeals
    ********************************/
   .appeals-inner {
-    padding-left: 20px;
+    padding-left: 25px;
     max-height: 338px;
     padding-bottom: 13.02vw;
     padding-top: 90px;
@@ -817,6 +827,7 @@ html {
     font-size: 24px;
     letter-spacing: 0.05em;
     line-height: 1.167;
+    margin-left: 5px;
   }
 
   .appeals__heading {
@@ -831,7 +842,7 @@ html {
     box-sizing: border-box;
     position: absolute;
     top: -170px;
-    left: 0;
+    left: 8px;
     font-size: 24px;
     font-family: "Open Sans Bold", Georgia, sans-serif;
     color: #ffffff;
@@ -846,7 +857,7 @@ html {
     position: absolute;
     /*top: -107px;*/
     top: -102px;
-    left: 48px;
+    left: 56px;
     height: 0;
     width: 20px;
     border-top: 5px solid #8f7bc8;
