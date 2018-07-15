@@ -186,7 +186,7 @@ html {
   font-weight: bold;
   padding-top: 4px;
   border-bottom: 4px solid #5e42b0;
-
+padding-right: 0;
 }
 
 .negro-appeals-list__item--second {
